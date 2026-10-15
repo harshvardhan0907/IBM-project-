@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindMate AI - Mental Wellness Companion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="brand">MindMate <span>AI</span></div>
+    <p>Your friendly mental wellness companion</p>
+    <span class="sdg">SDG 3 · Good Health and Well-being</span>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>How are you feeling today?</h1>
+      <p class="muted">Choose the mood that best describes how you feel right now.</p>
+      <div class="moods" role="group" aria-label="Select your mood">
+        <button class="mood" data-mood="Happy">😊 <span>Happy</span></button>
+        <button class="mood" data-mood="Okay">🙂 <span>Okay</span></button>
+        <button class="mood" data-mood="Stressed">😟 <span>Stressed</span></button>
+        <button class="mood" data-mood="Sad">😔 <span>Sad</span></button>
+      </div>
+      <p id="moodResult" class="result" aria-live="polite">Your check-in is optional.</p>
+      <p id="suggestion" class="suggestion" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+      <h2>Talk to MindMate</h2>
+      <p class="muted">Share what's on your mind. This demo uses predefined responses.</p>
+      <div id="chat" class="chat" aria-live="polite">
+        <div class="message bot"><strong>MindMate:</strong> Hi! How has your day been?</div>
+      </div>
+      <form id="chatForm" class="chat-form">
+        <label class="sr-only" for="userInput">Your message</label>
+        <input id="userInput" type="text" placeholder="Type a message..." autocomplete="off" required>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Quick wellness activities</h2>
+      <div class="tips">
+        <article><span>🌬️</span><h3>Pause and breathe</h3><p>Take a comfortable, gentle breath and relax your shoulders.</p></article>
+        <article><span>📝</span><h3>Write it down</h3><p>Write one thing on your mind and one small next step.</p></article>
+        <article><span>🤝</span><h3>Connect</h3><p>Consider talking with a trusted friend, adult, or counsellor.</p></article>
+      </div>
+    </section>
+
+    <section class="notice">
+      <h2>A quick note about safety</h2>
+      <p>MindMate is a student project prototype. It does not diagnose conditions, provide therapy, or replace professional help. If you feel unsafe or need urgent help, contact a trusted person or your local emergency service.</p>
+    </section>
+    <footer>MindMate AI · Student project prototype</footer>
+  </main>
+</body>
+</html>
